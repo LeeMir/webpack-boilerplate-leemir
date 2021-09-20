@@ -12,5 +12,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [],
+  plugins: [
+    ["@babel/plugin-proposal-class-properties", { "loose": true }] // class public field 사용 가능, loose: true => 코드 길이를 더 줄일 수 있음
+  ],
 };
