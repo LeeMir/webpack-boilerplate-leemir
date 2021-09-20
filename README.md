@@ -11,8 +11,6 @@ my js webpack boilerplate
 > Node.js : v14.17.3(LTS)
 >
 > npm : v6.14.13
->
-> NCloud : Ubuntu 18.04
 
 ### Dependencies
 
