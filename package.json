@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/LeeMir/webpack-boilerplate-leemir/issues"
   },
-  "homepage": "https://github.com/LeeMir/webpack-boilerplate-leemir#readme"
+  "homepage": "https://github.com/LeeMir/webpack-boilerplate-leemir#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
+  }
 }
