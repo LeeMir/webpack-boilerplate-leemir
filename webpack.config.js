@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
     filename: "bundle.js",
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "Webpack-Boilerplate",
       template: path.resolve(__dirname, "src", "app.html")
@@ -17,7 +19,7 @@ module.exports = {
   module: {
     rules: [{
       test: /\.js$/,
-      excludes: /node_modules/,
+      exclude: /node_modules/,
       use: {
         loader: "babel-loader"
       }
