@@ -26,4 +26,4 @@ npm install
 - [ ] bundling img
 - [ ] bundling font
 - [ ] tree shaking
-- [ ] webpack split(mode)
+- [x] webpack split(mode)
