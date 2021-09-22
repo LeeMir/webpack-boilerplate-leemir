@@ -21,8 +21,8 @@ npm install
 ## Feature
 
 - [x] babel
-- [ ] bundling css
-  - [ ] bundling scss(sass)
+- [x] bundling css
+  - [x] bundling scss(sass)
 - [ ] bundling img
 - [ ] bundling font
 - [ ] tree shaking
