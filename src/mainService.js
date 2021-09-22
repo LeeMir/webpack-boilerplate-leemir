@@ -1,3 +1,5 @@
+import "./css/test.scss";
+
 export default class MainService  {
     constructor({targetEl}) {
         this.targetEl = targetEl;
@@ -10,7 +12,7 @@ export default class MainService  {
     }
 
     render(data) {
-        return `<span>${data}</span>`
+        return `<span>${data}</span>`;
     }
 
 }
