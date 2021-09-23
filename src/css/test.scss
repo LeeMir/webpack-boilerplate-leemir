@@ -1,4 +1,2 @@
-html {
-  background-color: #010101;
-  color: #FFF;
-}
+@use './base/base';
+@use './components/test';
