@@ -7,16 +7,13 @@ module.exports = {
   entry: "./src/app.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].js",
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: "Webpack-Boilerplate",
-      template: path.resolve(__dirname, "src", "app.html")
-    }),
-    new MiniCssExtractPlugin({ filename: "style.css" })
-  ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   module: {
     rules: [
       {
@@ -40,5 +37,13 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: "Webpack-Boilerplate",
+      template: path.resolve(__dirname, "src", "app.html")
+    }),
+    new MiniCssExtractPlugin({ filename: "style.css" })
+  ]
 };
