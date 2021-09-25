@@ -35,8 +35,9 @@ npm run build # prod
 - [x] bundling css
   - [x] bundling scss(sass)
 - [x] bundling img
+  - [x] base64 encoding(size < 4kb)
 - [x] bundling font
-- [ ] tree shaking
+- [x] tree shaking
 - [x] webpack split(mode)
 
 ## ScreenShot
