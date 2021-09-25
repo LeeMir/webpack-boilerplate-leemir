@@ -1,13 +1,13 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = { 
-  entry: "./src/app.js",
+  entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].js",
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
   },
   optimization: {
     splitChunks: {
@@ -20,7 +20,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
@@ -37,7 +37,6 @@ module.exports = {
           }
         }
       },
-      
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
@@ -47,9 +46,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "Webpack-Boilerplate",
-      template: path.resolve(__dirname, "src", "app.html")
+      title: 'Webpack-Boilerplate',
+      template: path.resolve(__dirname, 'src', 'app.html')
     }),
-    new MiniCssExtractPlugin({ filename: "style.css" })
+    new MiniCssExtractPlugin({ filename: 'style.css' })
   ]
 };
